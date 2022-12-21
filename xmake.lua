@@ -9,7 +9,7 @@ target("rps")
 
     add_rules("mode.debug")
 
-	add_files("src/main.cpp")
+	add_files("src/*.cpp")
 
     after_build(function (target)
         os.cp(target:targetfile(), "$(scriptdir)/runtime")
